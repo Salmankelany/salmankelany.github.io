@@ -1,104 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salman Ahmed | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Header -->
-  <header class="bg-blue-900 text-white p-8 text-center shadow-md">
-    <h1 class="text-4xl font-bold">Salman Ahmed</h1>
-    <p class="text-lg mt-2">Clinical Pharmacist | Aspiring Clinical Data Analyst</p>
+  <header class="bg-blue-900 text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Salman Ahmed</h1>
+    <p class="text-lg">Clinical Pharmacist | Aspiring Clinical Data Analyst</p>
   </header>
 
   <!-- About Me -->
-  <section class="max-w-5xl mx-auto p-8">
-    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-    <p class="leading-relaxed">
-      I am a clinical pharmacist with 2 years of hospital and oncology experience, now transitioning into 
-      clinical research and data analytics. I specialize in combining healthcare knowledge with analytical 
-      tools (SQL, Excel, Python) to extract insights that improve patient care.
+  <section class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+    <p>
+      I am a clinical pharmacist with 2 years of hospital and oncology experience, now transitioning into
+      clinical data research and analytics. I enjoy combining healthcare knowledge with data skills
+      (SQL, Excel, Python) to generate insights that improve patient outcomes.
     </p>
   </section>
 
   <!-- Skills -->
-  <section class="bg-gray-100 p-8">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-semibold mb-6">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="bg-white p-4 rounded-xl shadow">
-          <span class="text-blue-700 font-bold">SQL</span>
-        </div>
-        <div class="bg-white p-4 rounded-xl shadow">
-          <span class="text-blue-700 font-bold">Excel Dashboards</span>
-        </div>
-        <div class="bg-white p-4 rounded-xl shadow">
-          <span class="text-blue-700 font-bold">Python (Pandas, Matplotlib)</span>
-        </div>
-        <div class="bg-white p-4 rounded-xl shadow">
-          <span class="text-blue-700 font-bold">Oncology Research</span>
-        </div>
-      </div>
+  <section class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-2">Skills</h2>
+      <ul class="list-disc ml-6">
+        <li>SQL, Excel (Dashboards), Python (Pandas, Matplotlib)</li>
+        <li>Data Visualization & Analysis</li>
+        <li>Clinical Research & Oncology Pharmacy</li>
+        <li>Medical Coding Basics</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Research Projects -->
-  <section class="max-w-5xl mx-auto p-8">
-    <h2 class="text-3xl font-semibold mb-6">Research & Projects</h2>
+  <!-- Projects -->
+  <section class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
 
-    <!-- Project Card 1 -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6">
-      <h3 class="text-2xl font-bold">Oncology Patient Outcomes Analysis</h3>
-      <p class="mt-2">Analyzed patient survival and treatment patterns in oncology using SQL and Python. 
-         Generated insights on treatment effectiveness and response rates.</p>
-      <canvas id="chart1" class="mt-4"></canvas>
-      <p class="mt-2 text-sm text-gray-600">Tools: SQL, Python | <a href="https://github.com/yourusername/project1" class="text-blue-600">View Code</a></p>
+    <!-- Example Project 1 -->
+    <div class="mb-6">
+      <h3 class="text-xl font-bold">Oncology Data Analysis with SQL</h3>
+      <p>Analyzed anonymized oncology patient data using SQL queries to identify treatment patterns and outcomes.</p>
+      <p class="text-sm text-gray-600">Tools: SQL, Excel | <a href="https://github.com/yourusername/project1" class="text-blue-600">View on GitHub</a></p>
     </div>
 
-    <!-- Project Card 2 -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6">
-      <h3 class="text-2xl font-bold">Interactive Excel Dashboard</h3>
-      <p class="mt-2">Built an interactive dashboard for patient admission tracking and treatment monitoring.</p>
-      <img src="dashboard-sample.png" alt="Dashboard Example" class="mt-4 rounded-lg shadow">
-      <p class="mt-2 text-sm text-gray-600">Tools: Excel, Power BI | <a href="https://github.com/yourusername/project2" class="text-blue-600">View Project</a></p>
+    <!-- Example Project 2 -->
+    <div class="mb-6">
+      <h3 class="text-xl font-bold">Interactive Excel Dashboard</h3>
+      <p>Created a dynamic dashboard to track patient admissions and treatment response rates in oncology.</p>
+      <p class="text-sm text-gray-600">Tools: Excel | <a href="https://github.com/yourusername/project2" class="text-blue-600">View Project</a></p>
     </div>
   </section>
 
   <!-- Contact -->
-  <footer class="bg-blue-900 text-white text-center p-8 mt-10">
-    <h2 class="text-xl font-bold">Get in Touch</h2>
-    <p class="mt-2">📧 your.email@example.com</p>
-    <p>
-      <a href="https://linkedin.com/in/yourusername" class="underline">LinkedIn</a> | 
-      <a href="https://github.com/yourusername" class="underline">GitHub</a>
-    </p>
+  <footer class="bg-blue-900 text-white text-center p-6 mt-8">
+    <p>📧 Email: your.email@example.com | <a href="https://linkedin.com/in/yourusername" class="underline">LinkedIn</a> | <a href="https://github.com/yourusername" class="underline">GitHub</a></p>
   </footer>
-
-  <!-- Chart.js Example -->
-  <script>
-    const ctx = document.getElementById('chart1').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Treatment A', 'Treatment B', 'Treatment C'],
-        datasets: [{
-          label: 'Survival Rate (%)',
-          data: [70, 55, 82],
-          backgroundColor: ['#2563eb', '#3b82f6', '#60a5fa']
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: { display: false }
-        }
-      }
-    });
-  </script>
 
 </body>
 </html>
