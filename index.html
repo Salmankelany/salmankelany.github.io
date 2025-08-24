@@ -3,63 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salman Ahmed | Portfolio</title>
+  <title>Salman | Data Analyst Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- Header -->
-  <header class="bg-blue-900 text-white p-6 text-center">
-    <h1 class="text-3xl font-bold">Salman Ahmed</h1>
-    <p class="text-lg">Clinical Pharmacist | Aspiring Clinical Data Analyst</p>
-  </header>
-
-  <!-- About Me -->
-  <section class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">About Me</h2>
-    <p>
-      I am a clinical pharmacist with 2 years of hospital and oncology experience, now transitioning into
-      clinical data research and analytics. I enjoy combining healthcare knowledge with data skills
-      (SQL, Excel, Python) to generate insights that improve patient outcomes.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section class="bg-gray-100 p-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-semibold mb-2">Skills</h2>
-      <ul class="list-disc ml-6">
-        <li>SQL, Excel (Dashboards), Python (Pandas, Matplotlib)</li>
-        <li>Data Visualization & Analysis</li>
-        <li>Clinical Research & Oncology Pharmacy</li>
-        <li>Medical Coding Basics</li>
+  <!-- ✅ Navbar -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#cover" class="text-2xl font-bold text-blue-700">Salman</a>
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#education" class="hover:text-blue-600">Education</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">☰</button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white border-t shadow">
+      <ul class="flex flex-col space-y-4 p-4">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#education" class="hover:text-blue-600">Education</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
       </ul>
     </div>
+  </header>
+
+  <!-- ✅ Cover -->
+  <section id="cover" class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6">
+    <h1 class="text-5xl font-bold mb-4">Hi, I'm Salman 👋</h1>
+    <p class="text-lg max-w-2xl">Data Analyst passionate about healthcare analytics, clinical research, and transforming data into insights that improve patient outcomes.</p>
+    <a href="#projects" class="mt-6 px-6 py-3 bg-white text-blue-700 rounded-lg shadow hover:bg-gray-100">View My Work</a>
   </section>
 
-  <!-- Projects -->
-  <section class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+  <!-- ✅ About -->
+  <section id="about" class="max-w-5xl mx-auto py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-lg text-gray-700">I am a clinical pharmacist turned data analyst, with 2 years of experience in oncology hospital practice. I specialize in healthcare data, clinical research, and using analytics to improve patient care outcomes.</p>
+  </section>
 
-    <!-- Example Project 1 -->
-    <div class="mb-6">
-      <h3 class="text-xl font-bold">Oncology Data Analysis with SQL</h3>
-      <p>Analyzed anonymized oncology patient data using SQL queries to identify treatment patterns and outcomes.</p>
-      <p class="text-sm text-gray-600">Tools: SQL, Excel | <a href="https://github.com/yourusername/project1" class="text-blue-600">View on GitHub</a></p>
-    </div>
-
-    <!-- Example Project 2 -->
-    <div class="mb-6">
-      <h3 class="text-xl font-bold">Interactive Excel Dashboard</h3>
-      <p>Created a dynamic dashboard to track patient admissions and treatment response rates in oncology.</p>
-      <p class="text-sm text-gray-600">Tools: Excel | <a href="https://github.com/yourusername/project2" class="text-blue-600">View Project</a></p>
+  <!-- ✅ Education -->
+  <section id="education" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Education</h2>
+      <div class="space-y-6">
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-semibold">Bachelor of Pharmacy</h3>
+          <p class="text-gray-600">XYZ University — Graduated 2023</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <footer class="bg-blue-900 text-white text-center p-6 mt-8">
-    <p>📧 Email: your.email@example.com | <a href="https://linkedin.com/in/yourusername" class="underline">LinkedIn</a> | <a href="https://github.com/yourusername" class="underline">GitHub</a></p>
-  </footer>
+  <!-- ✅ Skills -->
+  <section id="skills" class="max-w-5xl mx-auto py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white shadow rounded-lg p-6">SQL</div>
+      <div class="bg-white shadow rounded-lg p-6">Python</div>
+      <div class="bg-white shadow rounded-lg p-6">Excel</div>
+      <div class="bg-white shadow rounded-lg p-6">Tableau</div>
+      <div class="bg-white shadow rounded-lg p-6">Data Cleaning</div>
+      <div class="bg-white shadow rounded-lg p-6">Visualization</div>
+      <div class="bg-white shadow rounded-lg p-6">Statistics</div>
+      <div class="bg-white shadow rounded-lg p-6">Clinical Research</div>
+    </div>
+  </section>
 
+  <!-- ✅ Services -->
+  <section id="services" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-2">Data Analysis</h3>
+          <p class="text-gray-600">Transforming raw healthcare data into actionable insights.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-2">Data Visualization</h3>
+          <p class="text-gray-600">Designing dashboards and reports for clinical teams.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-2">Clinical Research Support</h3>
+          <p class="text-gray-600">Assisting in oncology-focused research and data management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Projects -->
+  <section id="projects" class="max-w-6xl mx-auto py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white shadow rounded-lg p-6">
+        <h3 class="text-xl font-semibold mb-2">Healthcare Cost Analysis</h3>
+        <p class="text-gray-600">Analyzed patient treatment costs to identify optimization opportunities.</p>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6">
+        <h3 class="text-xl font-semibold mb-2">Oncology Research Dashboard</h3>
+        <p class="text-gray-600">Developed a Tableau dashboard tracking clinical outcomes.</p>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6">
+        <h3 class="text-xl font-semibold mb-2">Patient Data Cleaning</h3>
+        <p class="text-gray-600">Automated data cleaning workflow for patient records using Python.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Contact -->
+  <section id="contact" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+      <p class="text-lg mb-6">Interested in working together? Let’s connect!</p>
+      <p>Email: <a href="mailto:youremail@example.com" class="text-blue-600">youremail@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" class="text-blue-600">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/salmankelany" class="text-blue-600">github.com/salmankelany</a></p>
+    </div>
+  </section>
+
+  <!-- ✅ Scripts -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    // Section fade-in animation
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+  </script>
 </body>
 </html>
