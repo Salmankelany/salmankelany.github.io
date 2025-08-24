@@ -1,125 +1,22 @@
-/* General page style */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Header */
-header {
-    background: #343a40;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+/* Hover card effect */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-header p {
-    font-size: 18px;
-    color: #ccc;
-}
-
-/* Sections */
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #222;
-    border-bottom: 2px solid #ddd;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* Lists */
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Contact section */
-#contact {
-    background: #343a40;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-#contact a {
-    color: #ffc107;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    header p {
-        font-size: 16px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    section {
-        padding: 20px 15px;
-    }
-}
-
-/* Profile picture style */
-.profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;  /* Makes it a circle */
-    object-fit: cover;   /* Crops image inside circle */
-    margin-right: 20px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Align picture + text */
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap; /* For mobile */
-}
-
-.about-container p {
-    flex: 1;
-    min-width: 250px;
-}
-
-/* Mobile responsive */
-@media (max-width: 600px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .profile-pic {
-        margin: 0 auto 20px;
-    }
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
